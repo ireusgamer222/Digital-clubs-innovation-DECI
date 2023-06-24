@@ -165,7 +165,7 @@ def defend(UserInput, Inventory, Monster):
         print("You ran back to the field.")
         time.sleep(2)
         x = random.randint(-2,0) # A Possible chance in decreasing the player's score because of running away
-        return 0    
+        return x
 
 
 # Cave event
