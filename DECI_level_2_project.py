@@ -277,7 +277,8 @@ def main():
     inventory = ["Trusty dagger"] # Inventory to carry items to defend
     UserInput = "y" # UserInput
     total_score = 0 # The total score of the game
-
+    CAVE_EVENT = True
+    
     while UserInput == "y":
 
         while True: 
@@ -384,6 +385,7 @@ def main():
                         new_item = cave(Userchances)
                         inventory.append(new_item)
                         CAVE_EVENT = False
+                        break
 
 
             print("Your current score is " + str(total_score))
@@ -433,6 +435,7 @@ def main():
                         new_item = cave(Userchances)
                         inventory.append(new_item)
                         CAVE_EVENT = False
+                        break
 
 
             print("Your current score is " + str(total_score))
